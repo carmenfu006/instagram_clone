@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
     if user && user.authenticate(params[:password])
       log_in(user)
-      redirect_to user_path(user)
+      redirect_to user_path(user), notice: 'You have successfully logged in.'
     else
       render 'new'
     end
