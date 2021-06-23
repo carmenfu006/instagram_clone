@@ -1,0 +1,6 @@
+<h1><%= @user.username %>'s profile setting page</h1>
+
+<%= form_for @user do |f| %>
+  <%= f.file_field :profile_picture %>
+  <%= f.submit 'Upload' %>
+<% end %>

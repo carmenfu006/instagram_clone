@@ -1,0 +1,9 @@
+<h1>This is Edit Post Page</h1>
+
+<%= image_tag @post.post_photo, style: 'width: 200px;' %>
+
+<%= form_for @post do |f| %>
+  <%= f.file_field :post_photo %>
+  <%= f.text_field :caption, placeholder: 'Caption' %>
+  <%= f.submit 'Post' %>
+<% end %>

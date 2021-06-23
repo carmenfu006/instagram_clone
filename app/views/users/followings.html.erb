@@ -1,0 +1,5 @@
+<h1><%= @user.username %>'s followings</h1>
+
+<% @user.followings.each do |user| %>
+  <%= link_to "#{user.username}", user_path(user) %>
+<% end %>
