@@ -11,9 +11,9 @@
   </head>
 
   <body>
+    <%= image_tag 'logo/rca-logo.png', style: 'display: block;' %>
     <%= render 'shared/header' %>
     <%= render 'shared/flash_message' %>
-    <%= image_tag 'logo/rca-logo.png' %>
     <%= yield %>
   </body>
 </html>

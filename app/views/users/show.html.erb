@@ -6,8 +6,6 @@
 
 <h1>Greetings, <%= @user.username %></h1>
 
-<%= link_to 'Settings', edit_user_path(@user) %>
-
 <%= link_to "#{@user.followings.count} Followings", followings_user_path(@user)%>
 
 <%= link_to "#{@user.followers.count} Followers", followers_user_path(@user)%>

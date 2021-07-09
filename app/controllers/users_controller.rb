@@ -1,19 +1,5 @@
 class UsersController < ApplicationController
-
-  def new
-  end
-
-  def create
-    #post method
-    user = User.create(user_params)
-
-    if user.save
-      log_in(user)
-      redirect_to user_path(user)
-    else
-      render :new
-    end
-  end
+  skip_before_action :authenticate_user!, only: [:show]
 
   def show
     @user = User.find(params[:id])
@@ -52,6 +38,6 @@ class UsersController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit(:username, :email, :password, :password_confirmation, :profile_picture)
+      params.require(:user).permit(:username, :birth_date, :profile_picture)
     end
 end
