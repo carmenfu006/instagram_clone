@@ -1,0 +1,17 @@
+.btn {
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 6px;
+}
+
+.btn-asphalt {
+  color: $ghost-white !important;
+  background-color: $asphalt;
+  border-color: $asphalt;
+}
+
+.btn-asphalt:hover {
+  color: $ghost-white !important;
+  background-color: $charcoal;
+  border-color: $charcoal;
+}

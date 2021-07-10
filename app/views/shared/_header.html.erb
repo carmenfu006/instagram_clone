@@ -1,9 +1,11 @@
-<%= link_to 'Home', root_path %>
+<%= link_to 'Home', root_path, class: 'btn btn-asphalt' %>
 
 <%= link_to 'About', about_path %>
 
 <% if user_signed_in? %>
-  <%= link_to 'Profile', user_path(current_user) %>
+  <button class='btn btn-asphalt'>
+    <%= link_to 'Profile', user_path(current_user) %>
+  </button>
   <%= link_to 'Settings', edit_user_path(current_user) %>
   <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <% else %>

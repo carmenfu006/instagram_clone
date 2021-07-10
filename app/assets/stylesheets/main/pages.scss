@@ -3,5 +3,14 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 body {
-  margin-top: 100px;
+  margin-top: 50px;
+  background-color: $ghost-white;
+  font-family: 'Zen Loop', cursive;
 }
+
+img {
+  display: block;
+  margin: 10px;
+}
+
+
