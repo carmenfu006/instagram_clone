@@ -1,5 +1,10 @@
 <h1>This is your homepage</h1>
 
+<%= form_for(root_path, method: :get) do |f| %>
+  <%= text_field_tag :search %>
+  <%= f.submit 'search' %>
+<% end %>
+
 <% @users.each do |user| %>
   <%= link_to "#{user.username}", user_path(user) %>
 <% end %>
