@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   # get '/', to: 'pages#homepage'
   get '/about', to: 'pages#about'
 
+  get '/search', to: 'searches#index'
+
   resources :users do
     member do
       #/users/1/followings

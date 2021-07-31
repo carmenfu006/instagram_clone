@@ -3,6 +3,7 @@
 <%= link_to 'About', about_path %>
 
 <% if user_signed_in? %>
+  <%= link_to 'Search', search_path %>
   <button class='btn btn-asphalt'>
     <%= link_to 'Profile', user_path(current_user) %>
   </button>
